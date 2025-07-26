@@ -52,7 +52,11 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold text-primary mb-4">NexSense</h3>
+            
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-sky-50 bg-clip-text text-transparent">
+              NexSense
+            </h1>
+          
             <p className="text-muted-foreground leading-relaxed max-w-md mb-6">
               Where brands go when they’re ready to think clearly, move intentionally, and grow with purpose.
             </p>
@@ -82,7 +86,7 @@ export const Footer = () => {
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
+                    className="text-muted-foreground hover:text-blue-900 transition-colors duration-200 cursor-pointer"
                   >
                     {item}
                   </a>
@@ -99,7 +103,7 @@ export const Footer = () => {
                 <li key={item}>
                   <a
                     href="#services"
-                    className="text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer"
+                    className="text-muted-foreground hover:text-blue-900 transition-colors duration-200 cursor-pointer"
                   >
                     {item}
                   </a>
@@ -113,16 +117,16 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold text-foreground mb-4">Contact</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Mail className="w-4 h-4 text-primary" />
-                <span>hello@nexsense.com</span>
+                <Mail className="w-5 h-5 min-w-[20px] text-blue-900" />
+                <span>cmo@nsdigitalcorp.com</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Phone className="w-4 h-4 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <Phone className="w-5 h-5 min-w-[20px] text-blue-900" />
+                <span>+91 87905 55087</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4 text-primary" />
-                <span>123 Business Ave, Suite 100</span>
+                <MapPin className="w-5 h-5 min-w-[20px] text-blue-900 mt-1" />
+                <span>Financial District, Hyderabad,<br/> Telangana</span>
               </div>
             </div>
           </div>
