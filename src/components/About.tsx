@@ -1,4 +1,4 @@
-import { Target, Users, Award, Zap } from "lucide-react";
+import { Target, Users, Award, Zap, Flower2, Leaf } from "lucide-react";
 
 const stats = [
   { icon: Users, number: "200+", label: "Happy Clients" },
@@ -69,7 +69,8 @@ export const About = () => {
           {/* Content */}
           <div className="animate-slide-in-left">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Who  <span className="text-primary">We Are</span>
+              <span className="text-blue-900">Who</span>
+              <span className="text-sky-600"> We Are</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               Nexsense is a digital marketing studio shaped by clarity, guided by curiosity, and built for change.
@@ -85,10 +86,10 @@ From algorithm to audience, every move we make is deliberate. Not just what work
               {stats.map((stat, index) => (
                 <div
                   key={stat.label}
-                  className="group text-center p-4 rounded-lg hover:bg-accent/20 transition-all duration-300 hover:scale-105"
+                  className="group text-center p-4 rounded-lg hover:bg-sky-100 transition-all duration-300 hover:scale-105"
                 >
                   <div className="flex justify-center mb-2">
-                    <stat.icon className="w-8 h-8 text-primary group-hover:rotate-12 transition-transform duration-300" />
+                    <stat.icon className="w-8 h-8 text-sky-600 group-hover:rotate-12 transition-transform duration-300" />
                   </div>
                   <div className="text-2xl font-bold text-foreground mb-1">{stat.number}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -118,7 +119,8 @@ From algorithm to audience, every move we make is deliberate. Not just what work
         <div className="mt-32">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Our <span className="text-primary">Values</span>
+              <span className="text-blue-900">Our</span>
+              <span className="text-sky-600"> Values</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               What we believe shapes how we build.
@@ -128,11 +130,11 @@ From algorithm to audience, every move we make is deliberate. Not just what work
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="group bg-card hover:bg-card/80 rounded-xl p-6 border border-border transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <div className="mb-4 relative">
-                <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                  <Zap className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-12 h-12 rounded-lg bg-sky-50 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                  <Zap className="w-6 h-6 text-sky-900 group-hover:scale-110 transition-transform duration-300" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-sky-600 transition-colors duration-200">
                 Sense over noise
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -142,11 +144,11 @@ From algorithm to audience, every move we make is deliberate. Not just what work
 
             <div className="group bg-card hover:bg-card/80 rounded-xl p-6 border border-border transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <div className="mb-4 relative">
-                <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                  <Award className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-12 h-12 rounded-lg bg-sky-50 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                  <Award className="w-6 h-6 text-sky-900 group-hover:scale-110 transition-transform duration-300" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-sky-600 transition-colors duration-200">
                 Quiet confidence
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -156,11 +158,11 @@ From algorithm to audience, every move we make is deliberate. Not just what work
 
             <div className="group bg-card hover:bg-card/80 rounded-xl p-6 border border-border transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <div className="mb-4 relative">
-                <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                  <Target className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-12 h-12 rounded-lg bg-sky-50 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                  <Target className="w-6 h-6 text-sky-900 group-hover:scale-110 transition-transform duration-300" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-sky-600 transition-colors duration-200">
                 Precision, always
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -170,11 +172,11 @@ From algorithm to audience, every move we make is deliberate. Not just what work
 
             <div className="group bg-card hover:bg-card/80 rounded-xl p-6 border border-border transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <div className="mb-4 relative">
-                <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                  <Zap className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-12 h-12 rounded-lg bg-sky-50 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                  <Leaf className="w-6 h-6 text-sky-900 group-hover:scale-110 transition-transform duration-300" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-sky-600 transition-colors duration-200">
                 Adaptability as nature
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -184,11 +186,11 @@ From algorithm to audience, every move we make is deliberate. Not just what work
 
             <div className="group bg-card hover:bg-card/80 rounded-xl p-6 border border-border transition-all duration-300 hover:scale-105 hover:shadow-lg md:col-span-2 lg:col-span-1">
               <div className="mb-4 relative">
-                <div className="w-12 h-12 rounded-lg bg-accent/20 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                  <Users className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-12 h-12 rounded-lg bg-sky-50 flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                  <Users className="w-6 h-6 text-sky-900 group-hover:scale-110 transition-transform duration-300" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-sky-600 transition-colors duration-200">
                 Partnership over project
               </h3>
               <p className="text-muted-foreground leading-relaxed">
