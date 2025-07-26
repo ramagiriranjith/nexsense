@@ -50,7 +50,8 @@ export const Contact = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Get In <span className="text-primary">Touch</span>
+            <span className="text-blue-900">Get In</span>
+              <span className="text-sky-600"> Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to take your digital marketing to the next level? Let's discuss your project
@@ -62,34 +63,34 @@ export const Contact = () => {
           <div className="space-y-8">
             {/* Email */}
             <div className="group flex items-start gap-4 p-6 rounded-xl hover:bg-card/50 transition-all duration-300 hover:scale-105">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                <Mail className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                <Mail className="w-6 h-6 text-blue-900" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-1">Email Us</h3>
-                <p className="text-muted-foreground">hello@nexsense.com</p>
+                <p className="text-muted-foreground">cmo@nsdigitalcorp.com</p>
               </div>
             </div>
 
             {/* Phone */}
             <div className="group flex items-start gap-4 p-6 rounded-xl hover:bg-card/50 transition-all duration-300 hover:scale-105">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                <Phone className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                <Phone className="w-6 h-6 text-blue-900" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-1">Call Us</h3>
-                <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                <p className="text-muted-foreground">+91 87905 55087</p>
               </div>
             </div>
 
             {/* Location */}
             <div className="group flex items-start gap-4 p-6 rounded-xl hover:bg-card/50 transition-all duration-300 hover:scale-105">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
-                <MapPin className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
+                <MapPin className="w-6 h-6 text-blue-900" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-1">Visit Us</h3>
-                <p className="text-muted-foreground">123 Business Ave, Suite 100<br />City, State 12345</p>
+                <p className="text-muted-foreground">Financial District, Hyderabad, Telangana</p>
               </div>
             </div>
 
@@ -99,22 +100,22 @@ export const Contact = () => {
                 <h3 className="text-lg font-semibold text-foreground mb-4 text-center">Stay in Touch</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {/* Instagram */}
-                  <a href="#" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-accent/20 transition-all duration-300">
+                  <a href="https://www.instagram.com/nsdm.2025?igsh=M2xydHBjNXYyZWRt" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-sky-50 transition-all duration-300">
                     <div className="w-10 h-10 bg-gradient-to-r from-pink-600 to-purple-700 rounded-lg flex items-center justify-center animate-rotate-social" style={{ animationDelay: '0.5s' }}>
                       <Instagram className="w-10 h-5 text-white" />
                     </div>
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex-1">Instagram</span>
+                    <span className="text-sm font-medium text-foreground group-hover:text-sky-900 transition-colors flex-1">Instagram</span>
                   </a>
                   <a
-                    href="https://wa.me/1234567890"
+                    href="https://wa.me/918790555087"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-3 p-3 rounded-lg hover:bg-accent/20 transition-all duration-300"
+                    className="group flex items-center gap-3 p-3 rounded-lg hover:bg-sky-50 transition-all duration-300"
                   >
                     <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center animate-rotate-social" style={{ animationDelay: '3s' }}>
                       <MessageCircle className="w-10 h-5 text-white" />
                     </div>
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex-1">WhatsApp</span>
+                    <span className="text-sm font-medium text-foreground group-hover:text-sky-900 transition-colors flex-1">WhatsApp</span>
                   </a>
 
 
@@ -166,7 +167,7 @@ export const Contact = () => {
                     type="text"
                     name="name"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-200"
                     placeholder="Your full name"
                   />
                 </div>
@@ -176,7 +177,7 @@ export const Contact = () => {
                     type="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-200"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -187,7 +188,7 @@ export const Contact = () => {
                   type="text"
                   name="subject"
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-200"
                   placeholder="Project inquiry"
                 />
               </div>
@@ -197,13 +198,13 @@ export const Contact = () => {
                   name="message"
                   rows={6}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-200 resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
               <button
                 type="submit"
-                className="group w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2"
+                className="group w-full bg-blue-900 text-primary-foreground py-3 rounded-lg font-semibold hover:bg-blue-800 transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2"
               >
                 Send Message
                 <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
