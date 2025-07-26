@@ -17,9 +17,14 @@ export const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">NexSense</h1>
-          </div>
+          <div className="flex-shrink-0 flex items-center gap-2">
+  <img src="/ns-2.png" alt="NexSense Logo" className="h-8 w-8 object-contain" />
+  <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">
+    NexSense
+  </h1>
+</div>
+
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
@@ -30,8 +35,8 @@ export const Header = () => {
                   key={item.name}
                   href={item.href}
                   className={`block px-4 py-2 transition-all duration-300 ease-in-out font-medium ${isContact
-                      ? "bg-gradient-to-r from-primary to-purple-600 text-white rounded-full text-center shadow-md hover:shadow-xl hover:scale-105 hover:rotate-[-1deg] hover:brightness-110"
-                      : "text-foreground hover:text-primary"
+                    ? "bg-gradient-to-r from-blue-900 to-sky-400 text-white rounded-full text-center shadow-md hover:shadow-xl hover:scale-105 hover:rotate-[-1deg] hover:brightness-110"
+                    : "text-foreground hover:text-sky-600"
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -39,16 +44,15 @@ export const Header = () => {
                 </a>
               );
             })}
-
-
           </nav>
+
 
 
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground hover:text-primary transition-colors duration-200"
+              className="text-foreground hover:text-sky-600 transition-colors duration-200"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -63,7 +67,7 @@ export const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  className="block px-3 py-2 text-foreground hover:text-sky-600 transition-colors duration-200 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
