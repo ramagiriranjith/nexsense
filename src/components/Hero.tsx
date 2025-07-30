@@ -1,4 +1,7 @@
 import { ArrowRight, Link, Sparkles } from "lucide-react";
+import NextLink from "next/link";
+import pic_1 from "../../public/pic_1.jpg"
+
 
 export const Hero = () => {
   return (
@@ -13,21 +16,21 @@ export const Hero = () => {
         <div className="absolute bottom-1/4 right-1/2 w-3 h-3 bg-gradient-to-br from-blue-300/40 to-blue-500/30 rounded-full animate-bubble-2" style={{ animationDelay: '1s' }}></div>
 
         {/* Additional scattered bubbles */}
-         <div className="absolute top-16 left-1/6 w-3 h-3 bg-gradient-to-br from-blue-500/22 to-blue-400/16 rounded-full animate-bubble-3" style={{animationDelay: '3s'}}></div>
-        <div className="absolute top-2/3 right-1/6 w-4 h-4 bg-gradient-to-br from-blue-300/28 to-blue-500/20 rounded-full animate-bubble-1" style={{animationDelay: '4s'}}></div>
-        <div className="absolute bottom-1/6 left-2/3 w-5 h-5 bg-gradient-to-br from-blue-400/26 to-blue-300/19 rounded-full animate-bubble-2" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-3/4 left-1/8 w-2 h-2 bg-gradient-to-br from-blue-500/32 to-blue-400/24 rounded-full animate-bubble-3" style={{animationDelay: '2.5s'}}></div>
-        <div className="absolute bottom-2/3 right-1/8 w-6 h-6 bg-gradient-to-br from-blue-300/24 to-blue-500/17 rounded-full animate-bubble-1" style={{animationDelay: '3.5s'}}></div>
-        <div className="absolute top-1/2 left-3/4 w-3 h-3 bg-gradient-to-br from-blue-400/30 to-blue-300/22 rounded-full animate-bubble-2" style={{animationDelay: '4.5s'}}></div>
-        <div className="absolute bottom-1/2 right-3/4 w-4 h-4 bg-gradient-to-br from-blue-500/28 to-blue-400/20 rounded-full animate-bubble-3" style={{animationDelay: '5s'}}></div>
-        <div className="absolute top-1/8 left-1/2 w-3 h-3 bg-gradient-to-br from-blue-400/22 to-blue-300/16 rounded-full animate-bubble-1" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-3/4 right-2/3 w-5 h-5 bg-gradient-to-br from-blue-300/27 to-blue-500/19 rounded-full animate-bubble-2" style={{animationDelay: '2.8s'}}></div>
-        <div className="absolute top-5/6 left-1/3 w-2 h-2 bg-gradient-to-br from-blue-500/30 to-blue-400/22 rounded-full animate-bubble-3" style={{animationDelay: '1.8s'}}></div>
-        <div className="absolute bottom-1/8 right-1/5 w-4 h-4 bg-gradient-to-br from-blue-400/26 to-blue-300/18 rounded-full animate-bubble-1" style={{animationDelay: '3.2s'}}></div>
-        <div className="absolute top-2/5 left-1/12 w-3 h-3 bg-gradient-to-br from-blue-300/25 to-blue-500/17 rounded-full animate-bubble-2" style={{animationDelay: '4.2s'}}></div>
-        <div className="absolute bottom-3/5 right-1/12 w-6 h-6 bg-gradient-to-br from-blue-500/24 to-blue-400/16 rounded-full animate-bubble-3" style={{animationDelay: '0.8s'}}></div>
-        <div className="absolute top-4/5 left-5/6 w-2 h-2 bg-gradient-to-br from-blue-400/28 to-blue-300/20 rounded-full animate-bubble-1" style={{animationDelay: '2.3s'}}></div>
-        <div className="absolute bottom-2/5 right-5/6 w-4 h-4 bg-gradient-to-br from-blue-300/26 to-blue-500/18 rounded-full animate-bubble-2" style={{animationDelay: '3.8s'}}></div>
+        <div className="absolute top-16 left-1/6 w-3 h-3 bg-gradient-to-br from-blue-500/22 to-blue-400/16 rounded-full animate-bubble-3" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-2/3 right-1/6 w-4 h-4 bg-gradient-to-br from-blue-300/28 to-blue-500/20 rounded-full animate-bubble-1" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-1/6 left-2/3 w-5 h-5 bg-gradient-to-br from-blue-400/26 to-blue-300/19 rounded-full animate-bubble-2" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-3/4 left-1/8 w-2 h-2 bg-gradient-to-br from-blue-500/32 to-blue-400/24 rounded-full animate-bubble-3" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute bottom-2/3 right-1/8 w-6 h-6 bg-gradient-to-br from-blue-300/24 to-blue-500/17 rounded-full animate-bubble-1" style={{ animationDelay: '3.5s' }}></div>
+        <div className="absolute top-1/2 left-3/4 w-3 h-3 bg-gradient-to-br from-blue-400/30 to-blue-300/22 rounded-full animate-bubble-2" style={{ animationDelay: '4.5s' }}></div>
+        <div className="absolute bottom-1/2 right-3/4 w-4 h-4 bg-gradient-to-br from-blue-500/28 to-blue-400/20 rounded-full animate-bubble-3" style={{ animationDelay: '5s' }}></div>
+        <div className="absolute top-1/8 left-1/2 w-3 h-3 bg-gradient-to-br from-blue-400/22 to-blue-300/16 rounded-full animate-bubble-1" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-3/4 right-2/3 w-5 h-5 bg-gradient-to-br from-blue-300/27 to-blue-500/19 rounded-full animate-bubble-2" style={{ animationDelay: '2.8s' }}></div>
+        <div className="absolute top-5/6 left-1/3 w-2 h-2 bg-gradient-to-br from-blue-500/30 to-blue-400/22 rounded-full animate-bubble-3" style={{ animationDelay: '1.8s' }}></div>
+        <div className="absolute bottom-1/8 right-1/5 w-4 h-4 bg-gradient-to-br from-blue-400/26 to-blue-300/18 rounded-full animate-bubble-1" style={{ animationDelay: '3.2s' }}></div>
+        <div className="absolute top-2/5 left-1/12 w-3 h-3 bg-gradient-to-br from-blue-300/25 to-blue-500/17 rounded-full animate-bubble-2" style={{ animationDelay: '4.2s' }}></div>
+        <div className="absolute bottom-3/5 right-1/12 w-6 h-6 bg-gradient-to-br from-blue-500/24 to-blue-400/16 rounded-full animate-bubble-3" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute top-4/5 left-5/6 w-2 h-2 bg-gradient-to-br from-blue-400/28 to-blue-300/20 rounded-full animate-bubble-1" style={{ animationDelay: '2.3s' }}></div>
+        <div className="absolute bottom-2/5 right-5/6 w-4 h-4 bg-gradient-to-br from-blue-300/26 to-blue-500/18 rounded-full animate-bubble-2" style={{ animationDelay: '3.8s' }}></div>
         {/* Animated Lines */}
         <div className="absolute top-0 left-0 w-full h-full">
           <svg className="w-full h-full opacity-8" viewBox="0 0 1000 1000">
@@ -80,19 +83,37 @@ export const Hero = () => {
               enhance brand visibility, and create meaningful connections with your audience. */}
               Where brands go when they’re ready to think clearly, move intentionally, and grow with purpose.
             </p>
+            
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in">
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in">
-                <button className="group inline-flex items-center gap-2 px-8 py-3 bg-blue-900 text-white rounded-lg font-semibold hover:bg-blue-800 transition-all duration-200 hover:scale-105">
-                  Get Started
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
-
-                <button className="px-8 py-3 border border-border text-foreground rounded-lg font-semibold hover:bg-sky-100 transition-all duration-200 hover:scale-105">
-  Learn More
-</button>
-
+                <ul className="space-y-2">
+                <li>
+                  <button
+                    onClick={() => {
+                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    className="group inline-flex items-center gap-2 px-8 py-3 bg-blue-900 text-white rounded-lg font-semibold hover:bg-blue-800 transition-all duration-200 hover:scale-105"
+                  >
+                    Get Started
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                  </button>
+                </li>
+              </ul>
+               <ul className="space-y-2">
+                <li>
+                  <button
+                    onClick={() => {
+                      document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                    className="px-8 py-3 border border-border text-foreground rounded-lg font-semibold hover:bg-sky-100 transition-all duration-200 hover:scale-105"
+                  >
+                    Learn More
+                    
+                  </button>
+                </li>
+              </ul>
 
               </div>
             </div>
@@ -102,7 +123,7 @@ export const Hero = () => {
           <div className="relative animate-slide-in-right">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src={pic_1}
                 alt="Digital Marketing Dashboard"
                 className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
               />
