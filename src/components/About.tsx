@@ -1,4 +1,6 @@
 import { Target, Users, Award, Zap, Flower2, Leaf } from "lucide-react";
+import pic_2 from "../../public/pic_2.jpg"
+import pic_3 from "../../public/pic_3.jpg"
 
 const stats = [
   { icon: Users, number: "200+", label: "Happy Clients" },
@@ -102,7 +104,7 @@ From algorithm to audience, every move we make is deliberate. Not just what work
           <div className="relative animate-slide-in-right">
             <div className="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src={pic_3}
                 alt="Team collaboration in modern office"
                 className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
               />
