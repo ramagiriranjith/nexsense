@@ -1,6 +1,43 @@
 import { Mail, Phone, MapPin, Send, Instagram, Linkedin, Facebook, Youtube, MessageCircle } from "lucide-react";
+import { useState } from "react";
 
 export const Contact = () => {
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus("idle");
+
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", "3af63235-e015-4ad1-b662-a132078fbcc3");
+    formData.append("subject", "New Contact Form Submission");
+    formData.append("from_name", "NexSense Website");
+    formData.append("redirect", ""); // prevent redirect to success page
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("success");
+        e.currentTarget.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      setStatus("error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
   return (
     <section id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden">
       {/* Enhanced Background Animation */}
@@ -51,7 +88,7 @@ export const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             <span className="text-blue-900">Get In</span>
-              <span className="text-sky-600"> Touch</span>
+            <span className="text-sky-600"> Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to take your digital marketing to the next level? Let's discuss your project
@@ -117,30 +154,6 @@ export const Contact = () => {
                     </div>
                     <span className="text-sm font-medium text-foreground group-hover:text-sky-900 transition-colors flex-1">WhatsApp</span>
                   </a>
-
-
-                  {/* <a href="#" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-accent/20 transition-all duration-300">
-                    <div className="w-10 h-10 bg-gradient-to-r from-green-600 to-green-700 rounded-lg flex items-center justify-center animate-rotate-social" style={{animationDelay: '0.5s'}}>
-                      <MessageCircle className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex-1">LinkedIn</span>
-                  </a>
-
-                  
-                   <a href="#" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-accent/20 transition-all duration-300">
-                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center animate-rotate-social" style={{animationDelay: '1s'}}>
-                      <Facebook className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex-1">Facebook</span>
-                  </a>
-
-                  
-                  <a href="#" className="group flex items-center gap-3 p-3 rounded-lg hover:bg-accent/20 transition-all duration-300">
-                    <div className="w-10 h-10 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center animate-rotate-social" style={{animationDelay: '1.5s'}}>
-                      <Youtube className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex-1">YouTube</span>
-                  </a>  */}
                 </div>
               </div>
             </div>
@@ -151,15 +164,7 @@ export const Contact = () => {
             <div className="absolute top-4 right-4 w-2 h-2 bg-primary/20 rounded-full animate-pulse"></div>
             <div className="absolute bottom-4 left-4 w-3 h-3 bg-accent/15 rounded-full animate-bounce"></div>
 
-            <form
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              className="space-y-6"
-            >
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-              <input type="hidden" name="subject" value="New Contact Form Submission" />
-              <input type="hidden" name="from_name" value="NexSense Website" />
-
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">Name</label>
@@ -195,8 +200,8 @@ export const Contact = () => {
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">Message</label>
                 <textarea
-                  name="message"
                   rows={6}
+                  name="message"
                   required
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all duration-200 resize-none"
                   placeholder="Tell us about your project..."
@@ -204,12 +209,26 @@ export const Contact = () => {
               </div>
               <button
                 type="submit"
+                disabled={loading}
                 className="group w-full bg-blue-900 text-primary-foreground py-3 rounded-lg font-semibold hover:bg-blue-800 transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2"
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
                 <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
               </button>
+
+              {/* Success/Error Message */}
+              {status === "success" && (
+                <p className="text-green-600 text-center font-medium">Message sent successfully!</p>
+              )}
+              {status === "error" && (
+                <p className="text-red-600 text-center font-medium">Oops! Something went wrong.</p>
+              )}
             </form>
+          
+
+
+
+
           </div>
         </div>
       </div>
