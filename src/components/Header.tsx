@@ -17,12 +17,14 @@ export const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-2">
-  <img src="/ns-2.png" alt="NexSense Logo" className="h-8 w-8 object-contain" />
-  <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-sky-500 bg-clip-text text-transparent">
-    NexSense
-  </h1>
-</div>
+          <div className="flex-shrink-0 flex items-center gap-2 hover:scale-105 hover:rotate-[-1deg] hover:brightness-110">
+            <img
+              src="/ns-2.png"
+              alt="NexSense Logo"
+              className="h-9 w-10 object-contain transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+
 
 
 
@@ -36,7 +38,7 @@ export const Header = () => {
                   href={item.href}
                   className={`block px-4 py-2 transition-all duration-300 ease-in-out font-medium ${isContact
                     ? "bg-gradient-to-r from-blue-900 to-sky-400 text-white rounded-full text-center shadow-md hover:shadow-xl hover:scale-105 hover:rotate-[-1deg] hover:brightness-110"
-                    : "text-foreground hover:text-sky-600"
+                    : "text-muted-foreground hover:text-blue-900"
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
