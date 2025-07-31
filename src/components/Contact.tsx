@@ -127,7 +127,7 @@ export const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-1">Visit Us</h3>
-                <p className="text-muted-foreground">Financial District, Hyderabad, Telangana</p>
+                <p className="text-muted-foreground">Financial District, Hyderabad,<br/> Telangana</p>
               </div>
             </div>
 
