@@ -3,10 +3,10 @@ import pic_2 from "../../public/pic_2.jpg"
 import pic_3 from "../../public/pic_3.jpg"
 
 const stats = [
-  { icon: Users, number: "200+", label: "Happy Clients" },
-  { icon: Target, number: "95%", label: "Success Rate" },
-  { icon: Award, number: "50+", label: "Awards Won" },
-  { icon: Zap, number: "24/7", label: "Support" }
+  { icon: Users, label: "Fewer Clients, Deeper Work" },
+  { icon: Target, label: "Every Brand, Fully Seen" },
+  { icon: Award, label: "Hands-On, Always" },
+  { icon: Zap, label: "We Think With You" }
 ];
 
 export const About = () => {
@@ -93,8 +93,8 @@ From algorithm to audience, every move we make is deliberate. Not just what work
                   <div className="flex justify-center mb-2">
                     <stat.icon className="w-8 h-8 text-sky-600 group-hover:rotate-12 transition-transform duration-300" />
                   </div>
-                  <div className="text-2xl font-bold text-foreground mb-1">{stat.number}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  {/* <div className="text-2xl font-bold text-foreground mb-1">{stat.number}</div> */}
+                  <div className="text-md text-muted-foreground ">{stat.label}</div>
                 </div>
               ))}
             </div>
