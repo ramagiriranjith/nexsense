@@ -9,24 +9,24 @@ export const Footer = () => {
         <div className="absolute top-1/4 left-1/6 w-3 h-3 bg-gradient-to-br from-sky-300/20 to-sky-400/15 rounded-full animate-bubble-1"></div>
         <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-gradient-to-br from-sky-400/25 to-sky-300/18 rounded-full animate-bubble-2"></div>
         <div className="absolute bottom-1/2 left-1/3 w-2 h-2 bg-gradient-to-br from-sky-500/30 to-sky-400/20 rounded-full animate-bubble-3"></div>
-        <div className="absolute top-1/2 right-1/3 w-5 h-5 bg-gradient-to-br from-sky-300/18 to-sky-500/12 rounded-full animate-bubble-1" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-1/3 right-1/6 w-3 h-3 bg-gradient-to-br from-sky-400/22 to-sky-300/16 rounded-full animate-bubble-2" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-2/3 left-1/4 w-4 h-4 bg-gradient-to-br from-sky-300/20 to-sky-500/15 rounded-full animate-bubble-3" style={{animationDelay: '3s'}}></div>
-        <div className="absolute bottom-1/4 left-2/3 w-2 h-2 bg-gradient-to-br from-sky-500/25 to-sky-400/18 rounded-full animate-bubble-1" style={{animationDelay: '4s'}}></div>
-        <div className="absolute top-1/6 right-1/2 w-3 h-3 bg-gradient-to-br from-sky-400/23 to-sky-300/17 rounded-full animate-bubble-2" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute bottom-3/4 left-1/8 w-4 h-4 bg-gradient-to-br from-sky-300/24 to-sky-500/16 rounded-full animate-bubble-3" style={{animationDelay: '2.5s'}}></div>
-        <div className="absolute top-1/8 right-1/8 w-2 h-2 bg-gradient-to-br from-sky-500/28 to-sky-400/20 rounded-full animate-bubble-1" style={{animationDelay: '3.5s'}}></div>
-        <div className="absolute bottom-2/3 left-3/4 w-5 h-5 bg-gradient-to-br from-sky-400/22 to-sky-300/15 rounded-full animate-bubble-2" style={{animationDelay: '1.2s'}}></div>
-        <div className="absolute top-3/4 right-3/4 w-3 h-3 bg-gradient-to-br from-sky-300/26 to-sky-500/18 rounded-full animate-bubble-3" style={{animationDelay: '4.2s'}}></div>
-        <div className="absolute bottom-1/6 left-1/2 w-2 h-2 bg-gradient-to-br from-sky-500/24 to-sky-400/17 rounded-full animate-bubble-1" style={{animationDelay: '0.8s'}}></div>
-        <div className="absolute top-5/6 right-2/3 w-4 h-4 bg-gradient-to-br from-sky-400/20 to-sky-300/14 rounded-full animate-bubble-2" style={{animationDelay: '2.8s'}}></div>
-        <div className="absolute bottom-1/8 left-7/8 w-3 h-3 bg-gradient-to-br from-sky-300/22 to-sky-500/16 rounded-full animate-bubble-3" style={{animationDelay: '3.8s'}}></div>
-        <div className="absolute top-7/8 right-1/12 w-2 h-2 bg-gradient-to-br from-sky-500/26 to-sky-400/19 rounded-full animate-bubble-1" style={{animationDelay: '1.8s'}}></div>
-        <div className="absolute bottom-5/6 left-11/12 w-4 h-4 bg-gradient-to-br from-sky-400/24 to-sky-300/17 rounded-full animate-bubble-2" style={{animationDelay: '4.5s'}}></div>
-        <div className="absolute top-2/5 right-4/5 w-3 h-3 bg-gradient-to-br from-sky-300/25 to-sky-500/18 rounded-full animate-bubble-3" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-3/5 left-4/5 w-2 h-2 bg-gradient-to-br from-sky-500/22 to-sky-400/15 rounded-full animate-bubble-1" style={{animationDelay: '3.2s'}}></div>
-        <div className="absolute top-4/5 right-1/5 w-5 h-5 bg-gradient-to-br from-sky-400/26 to-sky-300/19 rounded-full animate-bubble-2" style={{animationDelay: '2.2s'}}></div>
-        
+        <div className="absolute top-1/2 right-1/3 w-5 h-5 bg-gradient-to-br from-sky-300/18 to-sky-500/12 rounded-full animate-bubble-1" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-1/3 right-1/6 w-3 h-3 bg-gradient-to-br from-sky-400/22 to-sky-300/16 rounded-full animate-bubble-2" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-2/3 left-1/4 w-4 h-4 bg-gradient-to-br from-sky-300/20 to-sky-500/15 rounded-full animate-bubble-3" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-1/4 left-2/3 w-2 h-2 bg-gradient-to-br from-sky-500/25 to-sky-400/18 rounded-full animate-bubble-1" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/6 right-1/2 w-3 h-3 bg-gradient-to-br from-sky-400/23 to-sky-300/17 rounded-full animate-bubble-2" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-3/4 left-1/8 w-4 h-4 bg-gradient-to-br from-sky-300/24 to-sky-500/16 rounded-full animate-bubble-3" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute top-1/8 right-1/8 w-2 h-2 bg-gradient-to-br from-sky-500/28 to-sky-400/20 rounded-full animate-bubble-1" style={{ animationDelay: '3.5s' }}></div>
+        <div className="absolute bottom-2/3 left-3/4 w-5 h-5 bg-gradient-to-br from-sky-400/22 to-sky-300/15 rounded-full animate-bubble-2" style={{ animationDelay: '1.2s' }}></div>
+        <div className="absolute top-3/4 right-3/4 w-3 h-3 bg-gradient-to-br from-sky-300/26 to-sky-500/18 rounded-full animate-bubble-3" style={{ animationDelay: '4.2s' }}></div>
+        <div className="absolute bottom-1/6 left-1/2 w-2 h-2 bg-gradient-to-br from-sky-500/24 to-sky-400/17 rounded-full animate-bubble-1" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute top-5/6 right-2/3 w-4 h-4 bg-gradient-to-br from-sky-400/20 to-sky-300/14 rounded-full animate-bubble-2" style={{ animationDelay: '2.8s' }}></div>
+        <div className="absolute bottom-1/8 left-7/8 w-3 h-3 bg-gradient-to-br from-sky-300/22 to-sky-500/16 rounded-full animate-bubble-3" style={{ animationDelay: '3.8s' }}></div>
+        <div className="absolute top-7/8 right-1/12 w-2 h-2 bg-gradient-to-br from-sky-500/26 to-sky-400/19 rounded-full animate-bubble-1" style={{ animationDelay: '1.8s' }}></div>
+        <div className="absolute bottom-5/6 left-11/12 w-4 h-4 bg-gradient-to-br from-sky-400/24 to-sky-300/17 rounded-full animate-bubble-2" style={{ animationDelay: '4.5s' }}></div>
+        <div className="absolute top-2/5 right-4/5 w-3 h-3 bg-gradient-to-br from-sky-300/25 to-sky-500/18 rounded-full animate-bubble-3" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-3/5 left-4/5 w-2 h-2 bg-gradient-to-br from-sky-500/22 to-sky-400/15 rounded-full animate-bubble-1" style={{ animationDelay: '3.2s' }}></div>
+        <div className="absolute top-4/5 right-1/5 w-5 h-5 bg-gradient-to-br from-sky-400/26 to-sky-300/19 rounded-full animate-bubble-2" style={{ animationDelay: '2.2s' }}></div>
+
         {/* Subtle animated lines */}
         <div className="absolute top-0 left-0 w-full h-full opacity-40">
           <svg className="w-full h-full" viewBox="0 0 1000 400">
@@ -52,15 +52,15 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            
+
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-sky-50 bg-clip-text text-transparent">
               NexSense
             </h1>
-          
+
             <p className="text-muted-foreground leading-relaxed max-w-md mb-6">
               Where brands go when they’re ready to think clearly, move intentionally, and grow with purpose.
             </p>
-            
+
             {/* Social Media Icons */}
             {/* <div className="flex items-center gap-4">
               <a href="#" className="group w-10 h-10 bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
@@ -126,23 +126,33 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-5 h-5 min-w-[20px] text-blue-900 mt-1" />
-                <span>Financial District, Hyderabad,<br/> Telangana</span>
+                <span>Financial District, Hyderabad,<br /> Telangana</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground text-sm">
-            © 2025 NexSense. All rights reserved.
-          </p>
-          <div className="flex items-center gap-1 text-muted-foreground text-sm mt-4 md:mt-0">
-            Made with
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
-            for digital success
+        <div className="pt-8 border-t border-border">
+          <div className="text-muted-foreground text-sm text-center md:flex md:justify-center md:items-center md:gap-2">
+            <span>© 2025 NexSense. All rights reserved.</span>
+
+            <span className="hidden md:inline">|</span>
+
+            <span className="block md:inline mt-2 md:mt-0">
+              Designed by{" "}
+              <a
+                href="https://www.pikfusion.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-black text-rose-400 hover:text-rose-300 transition-colors"
+              >
+                PikFusion
+              </a>
+            </span>
           </div>
         </div>
+
       </div>
     </footer>
   );
